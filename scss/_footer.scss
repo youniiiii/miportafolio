@@ -1,0 +1,51 @@
+footer{
+    margin: 0%;
+    font-family: $letrados;
+    .grupo{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: " uno dos";
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    align-content: center;
+    justify-items: center;
+    align-items: stretch;
+    margin:0;
+    .grupo-1{
+    grid-area: uno;
+    width: 30%;
+    height: 20%;
+    margin:0;
+    img{
+       border-radius:35px;
+       filter: invert(100%);
+    }
+    img:hover{
+      filter: invert (0%); 
+        }
+    
+    }
+    .grupo-2{
+    text-align: center;
+    grid-area: dos;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    }
+}
+
+
+    .grupo-3{
+    background-color: black;
+    text-align: center;
+    margin: auto;
+    width:100%;
+    color: white;
+}
+}
