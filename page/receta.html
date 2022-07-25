@@ -86,10 +86,56 @@
       </div>
     </div>
   </nav>
-  <header>
-    <h1>armando mi receta</h1>
-  </header>
   <main>
+    <div class="master">
+      <div class="container">
+        <h1 class="titulo">armando mi receta</h1>
+      </div>
+      <section class="container">
+        <h2>Mi lista</h2>
+
+        <table class="tabl" id="seleccion">
+          <thead>
+            <tr>
+              <th>producto</th>
+              <th>precio x kg</th>
+              <th>cantidad de kilos</th>
+              <th>local</th>
+              <th>precio total</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-pacientes">
+            <tr class="paciente">
+              <td class="info-nombre-1"></td>
+              <td class="info-peso"></td>
+              <td class="info-altura"></td>
+              <td class="info-gordura"></td>
+              <td class="info-imc"></td>
+
+            </tr>
+          </tbody>
+        </table>
+        <a href="javascript:imprSelec('seleccion')"><button id="bns" class="mis">Imprimir lista</button> </a>
+      </section>
+      <section>
+        <form action="" id="formulariosCargar">
+          <div><label for="nombre">nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
+          </div>
+          <div><label for="producto">precio x kg</label>
+            <input type="number" name="producto" id="producto" placeholder="producto">
+          </div>
+          <div><label for="cantidades">cantidad de kilos</label>
+            <input type="number" name="cantidades" id="cantidades" placeholder="cantidad">
+          </div>
+          <div>
+            <label for="local">local</label>
+            <input type="text" name="local" id="local" placeholder="local">
+          </div>
+          <button id="miBoton" class="mis">agregar</button>
+        </form>
+      </section>
+    </div>
 
   </main>
 
@@ -172,7 +218,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+  <script src="../js/cript.js"></script>
+  <script src="js/calculaimcydaestilos.js"></script>
+  <script src="js/creaciondetablasporelboton.js"></script>
 </body>
-<script src="../js/cript.js"></script>
+
 
 </html>

@@ -273,8 +273,122 @@ canvas {
   background-image: url("../img/3klZ.gif"); }
   .fondo-animado h2,
   .fondo-animado p {
-    color: #e5fe00;
-    font-family: "Kaushan Script", cursive; }
+    color: #000000;
+    font-family: "Kaushan Script", cursive;
+    font-size: 20px;
+    background: springgreen; }
+
+.master {
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center; }
+  .master .container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  .master .container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto; }
+    .master .container h1 {
+      font-size: 2em;
+      display: inline-block;
+      vertical-align: middle; }
+    .master .container h2 {
+      font-size: 2em;
+      display: inline-block;
+      vertical-align: middle; }
+  .master section {
+    margin: 2em 0;
+    overflow: hidden; }
+  .master section h2 {
+    font-size: 3em;
+    display: block;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: .5em; }
+  .master table {
+    width: 100%;
+    margin-bottom: .5em;
+    table-layout: fixed; }
+  .master td,
+  .master th {
+    padding: .7em;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center; }
+  .master th {
+    font-weight: bold;
+    background-color: #EEE; }
+  .master label {
+    color: #555;
+    display: block;
+    margin-bottom: .2em; }
+  .master .campo {
+    margin: 0;
+    padding-bottom: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: .7em;
+    width: 100%; }
+  .master .campo-medio {
+    display: inline-block;
+    padding-right: .5em; }
+  .master .grupo {
+    width: 32%;
+    display: inline-block;
+    padding: 10px 0px; }
+  .master button {
+    padding: .5em 2em;
+    border: 0;
+    border-bottom: 3px solid;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0;
+    margin-top: -3px;
+    color: #fff;
+    background-color: #0c8cd3;
+    border-color: #04324c;
+    width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px; }
+  .master button:active {
+    margin-top: 0px;
+    border: 0; }
+  .master button[disabled=disabled],
+  .master button:disabled {
+    background-color: gray;
+    border-color: darkgray; }
+  .master .adicionar-paciente {
+    margin-top: 30px; }
+  .master .campo-invalido {
+    border: 1px solid red; }
+  .master .paciente-correcto {
+    background: #0e9ac1;
+    color: white; }
+  .master .paciente-altura-incorrecto {
+    background: crimson;
+    color: lightblue; }
+  .master .paciente-peso-incorrecto {
+    background: red;
+    color: #0f0080; }
+  .master form {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+  .master a {
+    text-decoration: none; }
+  .master .mis {
+    background: black;
+    color: snow;
+    border-radius: 20px;
+    width: 90px;
+    padding: 13px; }
+  .master input {
+    width: 90px; }
 
 .guardar,
 #btn {
