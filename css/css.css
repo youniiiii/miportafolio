@@ -62,7 +62,7 @@
    input:checked + .slid {
     background-color: #ffffff;
 
-}
+}/**/
    
    input:focus + .slid {
     box-shadow: 0 0 1px #000000;
