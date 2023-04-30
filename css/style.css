@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
 * {
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Roboto Condensed', sans-serif;
   box-sizing: border-box; }
 
 body {
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: black;
   color: white; }
 
@@ -165,13 +169,6 @@ article {
   height: 190px;
   width: 110px; }
 
-.mi-foto:hover {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  box-shadow: 0px 0px 15px 15px #ec731e;
-  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg); }
 
 section {
   margin: 5% auto; }
@@ -543,3 +540,104 @@ footer {
   .mov ul,
   .mov img {
     height: 100vh; } }
+
+
+
+.m-container {
+      position: relative;
+      z-index: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: transparent;
+      overflow: hidden;
+    }
+
+    .misMas::before,
+    .misMas::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: .5vmin;
+      height: .5vmin;
+      border-radius: 50%;
+      color: transparent;
+    }
+
+    
+    .misMas {
+      margin: 0;
+      height: 12vmin;
+      width: 120vmin;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .misMas::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: -26vmin;
+      left: 29vmin;
+      width: 62vmin;
+      height: 62vmin;
+      border-radius: 50%;
+      border: 1.3vmin solid currentColor;
+      box-sizing: border-box;
+    }
+    
+      em {
+      font-family: 'Josefin Sans', sans-serif;
+      color: currentColor;
+      font-size: 15vmin;
+      position: relative;
+      font-style: normal;
+      width: 20vmin;
+      text-align: center;
+    text-shadow: none;
+    }
+    
+      em.planet {
+      -webkit-animation: planet-rotate 4s linear infinite;
+      animation: planet-rotate 4s linear infinite;
+      position: relative;
+    }
+    
+      em.planet::before {
+      content: "";
+      position: absolute;
+      top: -.5vmin;
+      left: 3.5vmin;
+      z-index: -1;
+      width: 13vmin;
+      height: 13vmin;
+      border-radius: 50%;
+      background: black;
+    }
+    
+     em.planet.left {
+      -webkit-transform-origin: 40vmin 5vmin;
+      transform-origin: 40vmin 5vmin;
+    }
+    
+      em.planet.right {
+      -webkit-transform-origin: -20vmin 5vmin;
+      transform-origin: -20vmin 5vmin;
+    }
+    
+    @-webkit-keyframes planet-rotate {
+      to {
+        -webkit-transform: rotate(1turn);
+      }
+    }
+    
+    @keyframes planet-rotate {
+      to {
+        transform: rotate(1turn);
+      }
+    }
