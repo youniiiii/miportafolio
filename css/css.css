@@ -8,6 +8,13 @@
     border-radius: 35px;
    }
    
+
+   .numero{
+ display: flex;
+   align-items: ;
+   justify-content: ;
+   align-content: ;
+}
    .switch input {
     display: none;
    }

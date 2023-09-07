@@ -268,7 +268,9 @@ canvas {
   background-image: url("../img/fond.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%; }
-
+.container{
+  
+}
 .fondo-negro {
   font-family: "Kaushan Script", cursive;
   background-color: #000000;
