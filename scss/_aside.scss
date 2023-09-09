@@ -1,13 +1,13 @@
-table{
-     margin: 0%;
-     padding: 0%;
-    border: 0;}
-
-td,tr{
-    
+aside{
+width: 100%;
+    text-decoration: none;
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr;
+height:375px;
+a{
+    text-decoration: none;
     text-align: center;
-
+background-color: red;
 }
-td:hover ,th{
-    filter: invert(100%);
 }
